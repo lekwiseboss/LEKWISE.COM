@@ -1,0 +1,304 @@
+*,*::before, *::after {
+  
+   box-sizing: border-box;
+
+}
+body{
+    font-size: 14px;
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#f9f9f9 ;
+    overflow-x:hidden;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1a1f71;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    padding: 0;margin: 0;
+z-index:10;
+    
+}
+.nav-link{
+color:#f9f9f9 ;
+text-decoration: none;
+text-transform: uppercase;
+padding: 1rem;
+display: block;
+margin:0 ;
+
+}
+.nav-link:hover{
+    background-color:#991b1b;
+  
+    height: fit-content;
+transition-duration: 0.1s;
+
+transition-timing-function: linear;
+  
+}
+
+.link-list{
+    display: flex;
+    margin-right: 2rem;
+   
+    list-style-type: none;
+    padding: 0;
+}
+.link-list li{
+    margin-left:1rem ;
+    padding:rem 0.3rem;
+    
+   
+    display: list-item;
+}
+#welcome-section{
+    background-color:#991b1b;
+    height:100vh;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    margin: 0 ;
+    justify-content: center;
+    align-items: center;
+
+}
+h1,h2,h3,h4{
+    font-family:'Playfair Display', sans-serif;
+}
+.greeting{
+    font-size: 3rem;
+    
+}
+.profession{
+    color:#2e1065;
+    font-style: italic;
+    font-family:Helvetica;
+    font-size: 1.6rem;
+}
+.project-grid{
+    margin:0 auto 0 auto;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0;
+    background-color:#008080 ;
+}
+#work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+   
+    
+}
+.work-intro{
+    text-align: center;
+    font-size: 2.8rem ;
+    margin: 0 auto;
+    font-family:'Playfair Display', sans-serif;
+
+
+
+}
+.image-link{
+    margin: 0 auto;
+text-align: center;
+   text-decoration:none;
+    background-color:#003535 ;
+    color: #ffffff;
+padding-bottom: rem;
+border-radius: 4px;
+
+}
+
+
+.project-image{
+   
+   height: 400px;
+
+   width:100%;
+
+
+   
+}
+
+.work-hr{
+    width:100%;
+}
+.code{
+    display: ;
+}
+.project-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 2;
+    font-size: 1rem;
+    font-family: 'roboto', sans-serif;
+    color: aliceblue;
+    margin: 0.2rem;
+}
+.show-btn{
+   
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+    margin:0 auto 1.6rem;
+   
+}
+
+.btn{
+    background-color:#003535;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    transition:  black 0.3s ease-out;
+    padding: 0.6rem;
+}
+.btn:hover > i {
+    transform: translateX(2px);
+  }
+.btn:hover{
+transition: 0.3s ease-in-out;
+background-color:  #1a1f71;
+}
+.btn> i {
+    margin-left: 7px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  .footer{
+    background-color: #003535;
+
+  }
+  .colab{
+    margin-top: ;
+    margin:0rem auto 0 auto;
+    padding:10rem 20%;
+  }
+  .footer-hr{
+    width:96%;
+    border: 4px solid #1a1f71;
+  }
+  .colab{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .colab-header{
+    font-size: 4rem ;
+    margin: 0;
+    
+  }
+  .linkup{
+    font-size: 1.2rem;
+  }
+  .footer-links{
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 2px;
+    text-shadow: rgb(31, 31, 31) 2px 2px 1px;
+    transition: transform 0.3s ease-out;
+
+  }
+  .footer-links:hover{
+    transition: transform 0.3s ease-in-out;
+background-color: #008080;
+
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .clarifications{
+    max-width: 60%;
+    text-align: center;
+    margin: 1rem;
+
+  }
+  .copyright{
+    margin: 1rem;
+    text-align: center;
+  }
+/* moblie nav */
+  @media screen and (max-width:576px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+  }
+  .project-image{
+width: 100%;
+   
+    height: 300px;
+ 
+}
+.image-link{
+    margin: 0 auto;
+text-align: center;
+   text-decoration:none;
+    background-color:#003535 ;
+    color: #ffffff;
+padding-bottom: rem;
+border-radius: 4px;
+width: 100%;
+
+
+}
+.footer{
+    background-color: #003535;
+    margin:0rem auto 0 auto;
+    
+  }
+.colab-header{
+   margin: 0;
+   text-align: left;
+    
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .clarifications{
+   
+    text-align: center;
+  margin: 1rem auto;
+
+  }
+  .copyright{
+    text-align: center;
+  margin: 0 auto;
+
+  }
+  }
+    /* large-devices-nav-bar */
+@media screen and (min-width:768px) {
+    body{
+        font-size: 18px;
+    }
+    .project-image{
+   
+        height: 300px;
+     width: 320px;
+     
+        
+     }
+}
