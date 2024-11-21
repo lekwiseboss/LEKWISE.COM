@@ -3,13 +3,17 @@
    box-sizing: border-box;
 
 }
+html,body{
+  margin: 0;
+overflow-x: hidden;
+width: 100%;
+}
 body{
     font-size: 14px;
     font-family: "inter", sans-serif;
     margin: 0;
     padding: 0;
     color:#f9f9f9 ;
-    overflow-x:hidden;
 }
 .nav-bar{
     display: flex;
@@ -18,12 +22,13 @@ body{
     justify-content: flex-end;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0%;
     width: 100%;
     background: #1a1f71;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     padding: 0;margin: 0;
 z-index:10;
+width: 100%;
     
 }
 .nav-link{
@@ -58,6 +63,10 @@ transition-timing-function: linear;
     
    
     display: list-item;
+}
+#main{
+max-width: 100%;
+overflow: hidden;
 }
 #welcome-section{
     background-color:#991b1b;
@@ -182,12 +191,11 @@ background-color:  #1a1f71;
   }
   .footer{
     background-color: #003535;
-
   }
   .colab{
     margin-top: ;
     margin:0rem auto 0 auto;
-    padding:10rem 20%;
+    padding:8rem auto;
   }
   .footer-hr{
     width:96%;
@@ -196,12 +204,13 @@ background-color:  #1a1f71;
   .colab{
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
   }
   .colab-header{
     font-size: 4rem ;
     margin: 0;
+    max-width:100%;
     
   }
   .linkup{
@@ -218,6 +227,7 @@ background-color:  #1a1f71;
   .footer-links:hover{
     transition: transform 0.3s ease-in-out;
 background-color: #008080;
+box-shadow: #1a1f71 2px 2px 1px;
 
   }
   footer{
@@ -262,6 +272,11 @@ width: 100%;
 
 
 }
+.colab{
+  margin-top: ;
+  margin:0rem auto 0 auto;
+  padding:10rem 2rem;
+}
 .footer{
     background-color: #003535;
     margin:0rem auto 0 auto;
@@ -269,7 +284,8 @@ width: 100%;
   }
 .colab-header{
    margin: 0;
-   text-align: left;
+   text-align: center;
+   font-size: 2.8rem;max-width: 80%;
     
   }
   footer{
